@@ -23,22 +23,18 @@ class PasswordController extends BaseController
     /**
      * @return Response
      */
-    #[Route('/wrongPass', name: 'password_wrongPass')]
+    #[Route('/wrong-password', name: 'password_wrongPass')]
     public function wrongPass(): Response
     {
-
-        // preda data do sablony
         return $this->render("Password/wrongPass.html.twig");
     }
 
     /**
      * @return Response
      */
-    #[Route('/forgotPass', name: 'password_forgotPass')]
+    #[Route('/forgot-password', name: 'password_forgotPass')]
     public function forgotPass(): Response
     {
-
-        // preda data do sablony
         return $this->render("Password/forgotPass.html.twig");
     }
 

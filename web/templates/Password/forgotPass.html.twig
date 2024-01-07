@@ -6,7 +6,7 @@
 
 {% block header %}
 	<header>
-		<h1>Fakultni nemocnice Kralovske Vinohrady</h1>
+		<h1>Fakultní nemocnice Kralovské Vinohrady</h1>
 	</header>
 	<div class="DOClogin">
 		<h3>FNKV DOClogin</h3>
@@ -15,11 +15,11 @@
 
 {% block body %}
 	<main>
-		<form action="Homepage.html" method="post" target="_self">
+		<form action="{{ path('homepage_default') }}" method="post" target="_self">
 			<div class="login-box">
 				<span class="icon"><img src="https://seeklogo.com/images/M/medicine-symbol-logo-C5F32D7618-seeklogo.com.png" width="30px" height="30px" alt="logo"/></span>
-				<h4>Pro obnoveni hesla kontaktujte administratora</h4>
-				<button type="submit">Zpet na prihlaseni</button>
+				<h4>Pro obnovení hesla kontaktujte administrátora.</h4>
+				<button type="submit">Zpět na přihlášení</button>
 			</div>
 		</form>
 	</main>

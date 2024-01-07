@@ -24,11 +24,18 @@ class HomepageController extends BaseController
      * @return Response
      */
     #[Route('/', name: 'homepage_default')]
-    public function default(): Response
+    public function homepage(): Response
     {
-
-        // preda data do sablony
         return $this->render("Homepage/default.html.twig");
+    }
+
+    /**
+     * @return Response
+     */
+    #[Route('/evidence', name: 'homepage_dashboard')]
+    public function dashboard(): Response
+    {
+        return $this->render("Homepage/dashboard.html.twig");
     }
 
 
