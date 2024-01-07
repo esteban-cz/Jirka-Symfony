@@ -18,7 +18,7 @@
 		<div class="login-box">
 			<h3>Prihlaseni</h3>
 			<span class="icon"><img src="https://seeklogo.com/images/M/medicine-symbol-logo-C5F32D7618-seeklogo.com.png" width="30px" height="30px" alt="logo"/></span>
-			<form action="/wrongPass" method="post" target="_self">
+			<form action="{{ path('password_wrongPass') }}" method="post" target="_self">
 				<div class="input-box">
 					<input type="text" id="username" name="username" placeholder="Uzivatelske jmeno" required/>
 				</div>
@@ -29,7 +29,7 @@
 					<button type="submit">Prihlasit</button>
 					<div class="forgotPass">
 						<p>
-							<a href="ForgotPassword.html">Zapomenute heslo</a>
+							<a href="{{ path('password_forgotPass') }}">Zapomenute heslo</a>
 						</p>
 					</div>
 				</div>
